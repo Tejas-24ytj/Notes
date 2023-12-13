@@ -1,0 +1,23 @@
+pipeline{
+    agent any
+    stages{
+        stage("Code"){
+          steps{
+            echo "Building the Code"
+    }}
+        stage("Build"){
+          steps{
+            echo "Building the Code"
+        }
+    }
+        stage("Push"){
+          steps{
+            echo  "Pushing the Code to Docker Hub"
+        }
+    }
+        stage("Deploy"){
+          steps{
+            echo "Deployint the Container"
+        }
+    }
+}}
